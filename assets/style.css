@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100vh;
+    background-color: #1ba1ad;
+}
+.item {
+    width: 350px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    z-index: 99;
+}
+.item_top {
+    border-radius: 20px 20px 0 0;
+    flex: 1;
+    background-image: url(/profile-card-component-main/profile-card-component-main/images/bg-pattern-card.svg);
+    background-size: cover;
+}
+.item_bot {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+}
+.photoprofile img {
+    position: fixed;
+    border-radius: 50px;
+    border: 5px solid white;
+    margin-top: -50px;
+    margin-left: 120px;
+    margin-right: 50px;
+}
+
+.item_dados {
+    text-align: center;
+    margin-top: 70px;
+}
+.item_dados h1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+.item_dados h2 {
+    display: inline-block;
+    color: rgb(184, 178, 178);
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.item_dados h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: rgb(184, 178, 178);
+}
+
+.item_dados_social {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #CCC;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.item_dados_social_followers {
+    text-align: center;
+}
+.item_dados_social h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.item_dados_social h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: rgb(184, 178, 178);
+}
+.container .background-top img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+ }
+.container .background-bot img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width:355px) {
+    .container {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
